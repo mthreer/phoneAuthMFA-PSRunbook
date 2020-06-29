@@ -43,7 +43,7 @@ The rest of the App registration was done with the following configuration:
 
 ### ROPC (Resource Owner Password Credentials)
 Because this task requires a user account (service account) acting on behalf of other users, then this means that a so-called ROPC flow must be built for authenticating to MS Graph API:\
-https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc
+Read more: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc
 
 > The resource owner password credentials (i.e., username and password)
 > can be used directly as an authorization grant to obtain an access
@@ -52,10 +52,9 @@ https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc
 > client is part of the device operating system or a highly privileged
 > application), and when other authorization grant types are not
 > available (such as an authorization code).
+Reference: [https://tools.ietf.org/html/rfc6749#section-1.3.3](https://tools.ietf.org/html/rfc6749#section-1.3.3)
 
-[Reference: https://tools.ietf.org/html/rfc6749#section-1.3.3](https://tools.ietf.org/html/rfc6749#section-1.3.3)
-
-A ROPC (Resource Owner Password Credentials) flow means, authenticating with a username and password and finally passing the Application ID and Client Secret to Graph. For this reason, _**special measures should be taken to protect the data used for authentication**_.
+So a ROPC (Resource Owner Password Credentials) flow means, authenticating with a username and password and finally passing the Application ID and Client Secret to Graph. For this reason, _**special measures should be taken to protect the data used for authentication**_.
 
 ![ROPC](/images/ropc.PNG)
 
