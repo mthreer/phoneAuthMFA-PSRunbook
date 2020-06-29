@@ -3,14 +3,14 @@
 
 ## The problem
 
-Lets say you have a customer / tenant with the requirement that MFA and SSPR should only be registered when connected on the office network or via VPN, as measure to prevent identity theft via unsecure passwords for users yet not enrolled with MFA.
+Lets say you have a customer / tenant with the requirement that MFA (Multi-Factor Authentication) and SSPR (Self-Service Password Reset) should only be registered when connected on the office network or via VPN, as measure to prevent identity theft via unsecure passwords for users yet not enrolled with MFA.
 
 Hence, the following conditional access rules apply, together with combined-registration being enabled:\
 https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration
 
-During the current COVID-19 pandemic, this has caused problems for users working from home and thus there has been a need to centrally manage the phone number used for MFA for users in Azure AD.
+During the current COVID-19 pandemic, this may cause problems for users working from home and thus a need to centrally manage the phone number used for MFA for users in Azure AD arises.
 
-Historically, there has been no sure way to programmatically manage MFA registration for users. However, it has long been possible to manage the data via graphical GUI in Azure AD per user. However, this is a laborious task to do manually and introduces the risk of making mistakes when handling multiple users.
+Historically, there has been no sure way to programmatically manage MFA registration for users. However, it has long been possible to manage the data via the graphical user interface / GUI in Azure AD per user. However, this is a laborious task to do manually and introduces the risk of making mistakes when handling multiple users.
 
 Sure, you can sync the **mobile** attribute from AD, which will then be used as a suggestion for when the user first logs in and has to register MFA, but the user still has the final power to choose another phone number if desired and the users also has to complete the MFA-registration process themself, and if using combined registration, also SSPR.
 
