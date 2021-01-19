@@ -1,6 +1,6 @@
 ﻿<#--------------------------------------
 
-Author: Niklas Jumlin (niklas.jumlin@atea.se)
+Author: Niklas Jumlin (niklas.jumlin@secret.se)
 Version: 2020-06-24-1
 
 The script (software) reads a synchronized attribute value and updates or adds the value to the 
