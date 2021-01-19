@@ -1,4 +1,4 @@
-# phoneAuthMFA-PSRunbook v2.0
+# phoneAuthMFA-PSRunbook v3.0
 ## Managing of phoneNumber for multi-factor auth (MFA) from a Automation Runbook towards Microsoft Graph API
 
 ## The problem
